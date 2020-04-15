@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "aa972762-60f6-42b2-b005-a245fc6dcfcf",
+		"name": "node.js - crud backend webservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create new student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"studentName\":\"Brianna\",\n\t\"studentEmail\":\"bdavis99@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1997/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new teacher",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"teacherName\":\"Kendra\",\n\t\"teacherEmail\":\"ksmith96@gmail.com\",\n\t\"teacherCourseFocus\":\"Social Studies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1997/api/teacher",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read one student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/student/bdavis97@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"student",
+						"bdavis97@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read one teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/teacher/csmith89@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"teacher",
+						"csmith89@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read all teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/teacher",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update one student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"studentName\":\"Brianna\",\n\t\"studentEmail\":\"bdavis1999@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1997/api/student/bdavis99@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"student",
+						"bdavis99@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update one teacher",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"teacherName\":\"Kendra\",\n\t\"teacherEmail\":\"ksmith96@gmail.com\",\n\t\"teacherCourseFocus\":\"English\"\n}"
+				},
+				"url": {
+					"raw": "localhost:1997/api/teacher/ksmith96@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"teacher",
+						"ksmith96@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/student/dcarter98@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"student",
+						"dcarter98@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:1997/api/teacher/csmith89@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "1997",
+					"path": [
+						"api",
+						"teacher",
+						"csmith89@gmail.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
